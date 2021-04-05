@@ -18,6 +18,24 @@
         "Elements",
         "drpStates.json"
       ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "employeeStates",
+        "Elements",
+        "txtCustomers.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "employeeStates",
+        "Elements",
+        "lblCustomers.json"
+      ]
     }
   ],
   "class": "",
