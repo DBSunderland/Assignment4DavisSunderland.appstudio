@@ -22,8 +22,8 @@
           "!type": "External",
           "file": [
             "forms",
-            "employeeState",
-            "employeeState.json"
+            "employeeStates",
+            "employeeStates.json"
           ]
         }
       ],
@@ -46,7 +46,7 @@
       "eslintRules": null,
       "expanded_pmp": null,
       "extraheaders": null,
-      "firstform": "Form1",
+      "firstform": "employeeStates",
       "fontFamily": "system",
       "googlePlayKey": "certificates/google.json",
       "googlePlayTrack": "production",

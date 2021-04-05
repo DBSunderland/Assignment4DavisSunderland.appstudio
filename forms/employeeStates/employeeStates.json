@@ -14,7 +14,7 @@
       "!type": "External",
       "file": [
         "forms",
-        "employeeState",
+        "employeeStates",
         "Elements",
         "drpStates.json"
       ]
@@ -26,7 +26,7 @@
   "expanded_pmp": null,
   "fullScreen": "true",
   "height": 460,
-  "id": "employeeState",
+  "id": "employeeStates",
   "language": "JavaScript",
   "left": "0",
   "locked": false,
