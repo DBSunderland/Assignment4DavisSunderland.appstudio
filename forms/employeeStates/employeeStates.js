@@ -1,13 +1,60 @@
 let req = ""
 let query = ""
+let results = []
+let pw = "Albatro$$19"
+let userName = 'dbs15065'
+
+var states = ['AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY']
+
+employeeStates.onshow = function() {
+  drpStates.clear()
+  for (i = 0; i < states.length; i++)
+    drpStates.addItem(states[i])
+}
+
+drpStates.onclick = function(s) {
+    if (typeof(s) == "object")
+        return
+    else {
+        drpStates.value = s
+    query = `SELECT name from customer WHERE state = '${s}'`
+   req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=dbs15065&pass=" + pw + "&database=dbs15065&query=" + query)
+    if (req.status == 200) {  
+        results = JSON.parse(req.responseText)
+        if (results.length == 0)    
+           txtCustomers.value = "There are no customers from this state."
+        else {        
+           let message = ""
+           for (i = 0; i < results.length; i++)
+              // message = message + results[i][1] + "\n"
+               // txtaEmployee.value = results[i] + "\n"
+               lgCustomers.addItem(results[i])
+       }} } // end else
+}
+
+
+btnChangeForm.onclick=function(){
+  ChangeForm(deleteCustomer)
+  }
+
+
+
+
+
+
+/*
+let req = ""
+let query = ""
 let results = ""
 let pw = "Albatro$$19"
 let netID = "dbs15065"
 let database = "dbs15065"
 let allCustomerData = []
 
+*/
+/*
 var states = ['AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY']
-
+*/
 /*
 drpStates.onclick=function(){        
     query = "SELECT * FROM customer"
@@ -29,6 +76,7 @@ drpStates.onclick=function(){
 }
 */
 
+/*
 employeeStates.onshow = function() {
   drpStates.clear()
   for (i = 0; i < states.length; i++)
@@ -40,14 +88,13 @@ drpStates.onclick = function(s) {
     return
   } else {
     drpStates.value = s
-    }
-    query = "SELECT * FROM customer"
+    query = `SELECT * FROM customer WHERE state = '$(s)'`
     req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=" + netID + "&pass=" + pw + "&database=" + database + "&query=" + query)
 
     if (req.status == 200) { 
         results = JSON.parse(req.responseText)
         if (results.length == 0)    
-           lblCustomers.textContent = "There are no customers in the database."
+           lblCustomers.value = "There are no customers in this state."
         else {        
            let message = ""
            for (i = 0; i < results.length; i++)
@@ -57,7 +104,9 @@ drpStates.onclick = function(s) {
 
     } else
         lblCustomers.textContent = "Error code: " + req.status
+        }
 }
+*/
 
 /*
 lstNames.onclick=function(s){  // 's' is index of chosen

@@ -25,7 +25,7 @@
         "forms",
         "employeeStates",
         "Elements",
-        "txtCustomers.json"
+        "lblCustomers.json"
       ]
     },
     {
@@ -34,7 +34,16 @@
         "forms",
         "employeeStates",
         "Elements",
-        "lblCustomers.json"
+        "lgCustomers.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "employeeStates",
+        "Elements",
+        "btnChangeForm.json"
       ]
     }
   ],
