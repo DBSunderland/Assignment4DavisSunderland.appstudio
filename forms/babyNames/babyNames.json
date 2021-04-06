@@ -14,36 +14,45 @@
       "!type": "External",
       "file": [
         "forms",
-        "deleteCustomer",
+        "babyNames",
         "Elements",
-        "lgDeleteCustomer.json"
+        "btnFavBabyNames.json"
       ]
     },
     {
       "!type": "External",
       "file": [
         "forms",
-        "deleteCustomer",
+        "babyNames",
         "Elements",
-        "lblDeleteCustomer.json"
+        "lblDirections.json"
       ]
     },
     {
       "!type": "External",
       "file": [
         "forms",
-        "deleteCustomer",
+        "babyNames",
         "Elements",
-        "btnDeleteCustomer.json"
+        "drpBabyNames.json"
       ]
     },
     {
       "!type": "External",
       "file": [
         "forms",
-        "deleteCustomer",
+        "babyNames",
         "Elements",
-        "btnUpdatePage.json"
+        "btnInstructions.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "babyNames",
+        "Elements",
+        "lblNamesSet.json"
       ]
     }
   ],
@@ -53,7 +62,7 @@
   "expanded_pmp": null,
   "fullScreen": "true",
   "height": 460,
-  "id": "deleteCustomer",
+  "id": "babyNames",
   "language": "JavaScript",
   "left": "0",
   "locked": false,

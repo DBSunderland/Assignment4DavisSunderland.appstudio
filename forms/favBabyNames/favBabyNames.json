@@ -14,36 +14,54 @@
       "!type": "External",
       "file": [
         "forms",
-        "deleteCustomer",
+        "favBabyNames",
         "Elements",
-        "lgDeleteCustomer.json"
+        "btnBabyNames.json"
       ]
     },
     {
       "!type": "External",
       "file": [
         "forms",
-        "deleteCustomer",
+        "favBabyNames",
         "Elements",
-        "lblDeleteCustomer.json"
+        "btnEmployeeStates.json"
       ]
     },
     {
       "!type": "External",
       "file": [
         "forms",
-        "deleteCustomer",
+        "favBabyNames",
         "Elements",
-        "btnDeleteCustomer.json"
+        "drpFavNamesSet.json"
       ]
     },
     {
       "!type": "External",
       "file": [
         "forms",
-        "deleteCustomer",
+        "favBabyNames",
         "Elements",
-        "btnUpdatePage.json"
+        "btnFavNamesInstructions.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "favBabyNames",
+        "Elements",
+        "lblFavNamesInstructions.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "favBabyNames",
+        "Elements",
+        "imgBabyGirl.json"
       ]
     }
   ],
@@ -53,7 +71,7 @@
   "expanded_pmp": null,
   "fullScreen": "true",
   "height": 460,
-  "id": "deleteCustomer",
+  "id": "favBabyNames",
   "language": "JavaScript",
   "left": "0",
   "locked": false,
